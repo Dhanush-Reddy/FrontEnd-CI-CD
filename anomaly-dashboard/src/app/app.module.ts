@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';    
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatExpansionModule} from '@angular/material/expansion';
 @NgModule({
   declarations: [
     AppComponent
@@ -19,7 +21,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatSidenavModule,
     MatToolbarModule,
     MatButtonModule,MatIconModule,
-    FormsModule  
+    FormsModule,
+    MatMenuModule,
+    MatExpansionModule
 
 
   ],

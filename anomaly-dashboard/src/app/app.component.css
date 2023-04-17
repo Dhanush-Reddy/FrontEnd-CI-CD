@@ -3,6 +3,11 @@ height: 100%;
 }
 
 mat-sidenav{
-    width: 200px;
+    width: 25%;
     background-color: white;
+}
+mat-expansion-panel{
+    width: 30%;
+    margin-left: 8%;
+    margin-top: 4%;
 }

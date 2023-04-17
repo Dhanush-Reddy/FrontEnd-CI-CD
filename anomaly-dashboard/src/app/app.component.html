@@ -8,21 +8,34 @@
     <section>
       
       <div class="example-button-row">
-        <button mat-flat-button style="width: 25%;margin-top: 8%; margin-left: 8%;">Basic</button>
-        <br>
-        <button mat-flat-button style="width: 20%;margin-top: 8%; margin-left: 8%;" color="primary">Primary</button>
-        <br>
-        <button mat-flat-button style="width: 20%;margin-top: 8%; margin-left: 8%;" color="accent">Accent</button>
-        <br>
-        <button mat-flat-button style="width: 20%;margin-top: 8%; margin-left: 8%;" color="warn">Warn</button>
-        <br>
-        <button mat-flat-button style="width: 20%;margin-top: 8%; margin-left: 8%;" disabled>Disabled</button>
-      <br>
+
+        <mat-expansion-panel style=" text-align: center;width: 50%;" hideToggle>
+          <mat-expansion-panel-header style="background-color:rgb(237, 234, 234);">
+            <mat-panel-title >
+             Home
+            </mat-panel-title>
+          </mat-expansion-panel-header >
+          <a>Something</a>
+          <br>
+          <a>new</a>
+        </mat-expansion-panel>
+        
+        <mat-expansion-panel style=" text-align: center;width: 50%;" hideToggle>
+          <mat-expansion-panel-header style="background-color:rgb(237, 234, 234);">
+            <mat-panel-title >
+             Home2
+            </mat-panel-title>
+          </mat-expansion-panel-header >
+          <button mat-button>new</button>
+          <br>
+          <button mat-button>home </button>
+        </mat-expansion-panel>
       </div>
     </section>
-
-
   </mat-sidenav>
- 
-
+  <mat-accordion>
+   
+  </mat-accordion>
+  
 </mat-sidenav-container>
+
