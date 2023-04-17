@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+<mat-toolbar-row>
+  <button mat-button (click)="opened =! opened" > <mat-icon>menu</mat-icon> Menu </button>
+</mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="opened" mode="over">
+    <section>
+      
+      <div class="example-button-row">
+        <button mat-flat-button style="width: 25%;margin-top: 8%; margin-left: 8%;">Basic</button>
+        <br>
+        <button mat-flat-button style="width: 20%;margin-top: 8%; margin-left: 8%;" color="primary">Primary</button>
+        <br>
+        <button mat-flat-button style="width: 20%;margin-top: 8%; margin-left: 8%;" color="accent">Accent</button>
+        <br>
+        <button mat-flat-button style="width: 20%;margin-top: 8%; margin-left: 8%;" color="warn">Warn</button>
+        <br>
+        <button mat-flat-button style="width: 20%;margin-top: 8%; margin-left: 8%;" disabled>Disabled</button>
+      <br>
+      </div>
+    </section>
+
+
+  </mat-sidenav>
+ 
+
+</mat-sidenav-container>
