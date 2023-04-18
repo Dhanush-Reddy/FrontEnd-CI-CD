@@ -6,36 +6,50 @@
 <mat-sidenav-container>
   <mat-sidenav [(opened)]="opened" mode="over">
     <section>
-      
+
       <div class="example-button-row">
 
-        <mat-expansion-panel style=" text-align: center;width: 50%;" hideToggle>
+        <mat-expansion-panel style=" text-align: left;width: 90%;" hideToggle>
           <mat-expansion-panel-header style="background-color:rgb(237, 234, 234);">
             <mat-panel-title >
-             Home
+             Home1
             </mat-panel-title>
           </mat-expansion-panel-header >
-          <a>Something</a>
+          <a routerLink="/comp1">
+            <button  mat-button>New</button>
+          </a>
           <br>
-          <a>new</a>
+          <a routerLink="/comp2">
+            <button class="inside" mat-button>Something</button>
+          </a>
+          <br>
+          <a routerLink="/comp3">
+            <button mat-button>something 2</button>
+          </a>
         </mat-expansion-panel>
-        
-        <mat-expansion-panel style=" text-align: center;width: 50%;" hideToggle>
+
+        <mat-expansion-panel style=" text-align: left;width: 90%;" hideToggle>
           <mat-expansion-panel-header style="background-color:rgb(237, 234, 234);">
             <mat-panel-title >
              Home2
             </mat-panel-title>
           </mat-expansion-panel-header >
-          <button mat-button>new</button>
+          <a routerLink="/comp1">
+
+            <button class="inside" mat-button>New</button>
+          </a>
           <br>
-          <button mat-button>home </button>
+          <button class="inside" mat-button>home</button>
+          <br>
+          <button mat-button>something2</button>
         </mat-expansion-panel>
       </div>
     </section>
   </mat-sidenav>
   <mat-accordion>
-   
+
   </mat-accordion>
-  
+
 </mat-sidenav-container>
 
+<router-outlet></router-outlet>
