@@ -15,12 +15,18 @@ import { Comp2Component } from './comp2/comp2.component';
 import { Comp3Component } from './comp3/comp3.component';
 // import { AppRoutingModule } from './app-routing
 import { RouterModule } from '@angular/router';
+import{Chart,registerables} from 'node_modules/chart.js';
+import { ChartComponent } from './chart/chart.component';
+
+Chart.register(...registerables)
 @NgModule({
   declarations: [
     AppComponent,
     Comp1Component,
     Comp2Component,
-    Comp3Component
+    Comp3Component,
+    ChartComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,9 @@ import { RouterModule } from '@angular/router';
       {path:'',component:AppComponent},
       {path:'comp1',component:Comp1Component },
       {path: 'comp2',component:Comp2Component},
-      {path:'comp3',component:Comp3Component}
+      {path:'comp3',component:Comp3Component},
+      {path:'chart',component:ChartComponent}
+
     ])
 
 

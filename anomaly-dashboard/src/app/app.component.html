@@ -1,10 +1,12 @@
+
+
 <mat-toolbar color="primary">
 <mat-toolbar-row>
   <button mat-button (click)="opened =! opened" > <mat-icon>menu</mat-icon> Menu </button>
 </mat-toolbar-row>
 </mat-toolbar>
 <mat-sidenav-container>
-  <mat-sidenav [(opened)]="opened" mode="over">
+  <mat-sidenav [(opened)]="opened" mode="push">
     <section>
 
       <div class="example-button-row">
@@ -23,8 +25,8 @@
             <button class="inside" mat-button>Something</button>
           </a>
           <br>
-          <a routerLink="/comp3">
-            <button mat-button>something 2</button>
+          <a routerLink="/chart">
+            <button mat-button>chat</button>
           </a>
         </mat-expansion-panel>
 
@@ -46,10 +48,13 @@
       </div>
     </section>
   </mat-sidenav>
-  <mat-accordion>
 
-  </mat-accordion>
 
+  <router-outlet></router-outlet>
 </mat-sidenav-container>
 
-<router-outlet></router-outlet>
+
+
+
+
+
